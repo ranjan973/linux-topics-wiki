@@ -32,7 +32,9 @@ Its a persistent map which uses key value pair to store the content. The value i
 [aranjan@mycentosVM cookbook]$ echo "Apple Pie" | git hash-object --stdin --> Plumbing command
 23991897e13e47ed0adb91a0082c31c82fe0cbe5
 
-The first thing to start working with GIT is to create a repository using the command "git init" from the directory which needs to be the git repo. This will create a .git folder which stores all the history,metadata and configuration that Git uses to track and manage the project.
+The first step to start working with Git is to create a repository using the git init command in the directory you want to track.
+
+This initializes the directory as a Git repository by creating a hidden .git folder, which stores all the history, metadata, and configuration required for Git to track and manage changes in the project. The .git folder in a directory makes that folder a GIT repo
 
 .git is the brain of the git repository.
 
