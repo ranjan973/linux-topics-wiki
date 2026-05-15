@@ -1,5 +1,9 @@
 # GIT Introduction and commands
 
+### What is git?
+
+GIT is a distributed version control or Source Code management System which solved the problem of versioning and collaboration in the software development.
+
 ### Installing GIT on Linux Distros
    #### Debian/Ubuntu:
    - sudo apt-get update
