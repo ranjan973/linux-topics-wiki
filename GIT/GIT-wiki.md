@@ -38,6 +38,6 @@ This initializes the directory as a Git repository by creating a hidden .git fol
 
 .git is the brain of the git repository.
 
-<img width="804" height="978" alt="image" src="https://github.com/user-attachments/assets/8c6e75ee-70b4-41ff-8ea0-75e3f51b2f0c" />
+<img width="504" height="578" alt="image" src="https://github.com/user-attachments/assets/8c6e75ee-70b4-41ff-8ea0-75e3f51b2f0c" />
 
 
