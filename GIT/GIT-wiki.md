@@ -65,7 +65,7 @@ What is upstream change? Suppose I create a branch feature from main branch and 
 Both of these commands solve the same problem which is integrate changes from one branch to another branch - they just do it in different ways.
 Suppose I created a new feature branch from main and did commits in the feature branch. Parallely main branch is also getting updated with new commits. If I want to bring the new commits from main to my feature branch, I have 2 options : git merge and git rebase. 
 
-If I do "git merge main" from being in the feature branch, I will have extraneous merge commits coming from the main branch in the feature branch every time I need to incorporate upstream changes. If main is very active, this can pollute my feature branch's history quite a bit. THIS is the problem git rebase will solve.
+If I do 'git merge main' from being in the feature branch, I will have extraneous merge commits coming from the main branch in the feature branch every time I need to incorporate upstream changes. If main is very active, this can pollute my feature branch's history quite a bit. THIS is the problem git rebase will solve.
 
 Git rebase main moves the entire feature branch to begin on the tip of the main branch like the feature branch had branched from the updated main branch. The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge commits required by git merge. Second, as you can see in the above diagram, rebasing also results in a perfectly linear project history—you can follow the tip of feature all the way to the beginning of the project without any forks. 
 
