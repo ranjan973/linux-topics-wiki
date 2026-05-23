@@ -50,6 +50,7 @@ EX:1 `ansible -i inventory_file 172.31.22.25 -m "shell" -a "touch devops"`
  [Webservers]
  
  172.31.82.84
+ 
  172.31.81.100
  
  `ansible -i inventory_file Webservers -m "shell" -a "touch devops"` --> This will create devops folder in the homedirectory on both the servers under Webservers group.
