@@ -1,11 +1,11 @@
-### Cofiguration Management with Ansible.
+# Cofiguration Management with Ansible.
 
-## Problem Statement: 
+### Problem Statement: 
 In early days, sysadmin used to manage the infrastructure/server configs, patching, software installations, upgrades manually or with shell scripting. THis was fine if the number of servers were less but became a combursome task with the adoption of cloud and micro-service architecture where the number of servers grew 10X.
 
 The manual config management became slow, non-repeatable and error prone. The scripts were hard to maintain. Congif management tools like Ansible, Cheff, Puppet solved this issue by automating infrastructure management by defining system configurations as code.
 
-## Why Ansible amongst other config Management Tools?
+### Why Ansible amongst other config Management Tools?
 
 - Puppet is a pull mechanism model whereas Ansible works on pull mechanism.
 	  In Push mechanism, the control server sends (pushes) configuration to target machines or managed nodes using Anisble playbook. In pull mechanism, the client (agents) regularly checks (pulls) configuration from the server.
@@ -21,13 +21,13 @@ The manual config management became slow, non-repeatable and error prone. The sc
 
 - Ansible is written in Python and we can write our own Ansible modules. Modules can be shared using Ansible Galaxy.
 
-## Issues with Ansible
+### Issues with Ansible
 
 - Support of Windows OS is not seamless and has scope of improvement. Linux support is better.
 - Debugging is not so good.
 - Performance of Ansible degrades when dealing of huge numbe of servers or large parallel executions.
 
-## Passwordless Authentication
+### Passwordless Authentication
 
 To set up passwordless SSH key authentication, we need to generate the public/private key pair using ssh-keygen and then copy the public key contents under ~/.ssh/id_rsa.pub to the ~/.ssh/authorized_keys file on the other server to which we want to login using passwordless auth.
 
@@ -37,7 +37,7 @@ To set up passwordless SSH key authentication, we need to generate the public/pr
 --> Client says ssh@server_IP
 -->Server has a way to verify that the client possesses the corresponding private key by sending a challenge to teh client and the client saigns that challenge using its private key. The server verifies it using the client's public key.
 
-## Ansible Adhoc Commands
+### Ansible Adhoc Commands
 - To perform simple tasks we don't need to write playbooks and can be achieved by using ansible adhoc commands. It's similar to shell commands that we run like ls or cd etc. We write playbooks to perform series of actions just like we do with shell scripts.
 
 EX:1 `ansible -i inventory_file 172.31.22.25 -m "shell" -a "touch devops"`
@@ -55,7 +55,7 @@ EX:1 `ansible -i inventory_file 172.31.22.25 -m "shell" -a "touch devops"`
  
  The default ansible inventory file location is /etc/ansible/hosts. If we put this file under a custom dir, we need to specify it in the adhoc command using the switch -i
  
- ## What is Ansible role
+ ### What is Ansible role
  
  Ansible role is a way to organize complex playbooks into reusable structured components for better readability and efficiency. So instead of writing everything in one playbook. Ansible role seggregates them into smaller pieces like Tasks, Variables,Files, Templates,handlers which are all grouped under a single unit/folder.
  
