@@ -48,6 +48,7 @@ EX:1 `ansible -i inventory_file 172.31.22.25 -m "shell" -a "touch devops"`
  We can group servers in Ansible inventory file using syntax [Server_Type]. Ex below
  
  [Webservers]
+ 
  172.31.82.84
  172.31.81.100
  
