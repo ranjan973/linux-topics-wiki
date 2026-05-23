@@ -50,7 +50,7 @@ git log - shows the commit history of the repo including who committed it and th
 git log <branchname> shows the commit logs without actually switching to that branch.
 
 git commit - To commit/save all the staged changes in the git repository. This creates a checkpoint or restore point and has a unique Hash ID.
-git commit -m "My first commit" OR git commit -am "Message" ( To add to staging area and commit in the same command)
+`git commit -m "My first commit"` OR git commit -am "Message" ( To add to staging area and commit in the same command)
 
 git clone : This is used to download a copy of the repository to your local machine.
 
