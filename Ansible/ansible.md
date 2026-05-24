@@ -20,6 +20,7 @@ The manual config management became slow, non-repeatable and error prone. The sc
 - Ansible is easy to lear using global language i.e YAML manifests whereas Puppet is using its own Puppet language.
 
 - Ansible is written in Python and we can write our own Ansible modules. Modules can be shared using Ansible Galaxy.
+- **Ansible is idempotent**: THis means that if a package is already installed or a service is running, Ansible will not un-necessary perform the action and just return saying Nothing to change if the desired state is already achieved.
 
 ### Issues with Ansible
 
