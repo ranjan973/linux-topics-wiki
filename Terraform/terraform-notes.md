@@ -25,12 +25,11 @@ Terraform <-----> Terraform Provider<------> Target API
 ### Terraform workflow commands
 1) `terraform init` - This sets up teh environment by downloading provider ( AWS, Azure etc) plugins, modules and initializing the backend ( local or remote) where the state file will be stored. This creates the working directory (.terraform) folder.
 
+2) `terraform plan` - This is a dry run and shows what changes will be done using the terraform file
+3) `terraform validate`
+4) `terraform apply` - This actually creates the resources
 
-2) terraform plan - This is a dry run and shows what changes will be done using the terraform file
-3) terraform validate
-4) terraform apply - This actually creates the resources
-
-** What is a terraform provider??
+### What is a terraform provider??
 
 A provider is a plugin that enables Terraform to communicate with the platform or cloud service by translating terraform code to API calls.
 -- Official Providers ( 30+) - Maintained by HashiCorp
