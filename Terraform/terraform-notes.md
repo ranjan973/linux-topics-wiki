@@ -1,4 +1,4 @@
-*Infrastructure as Code (IaaC) with Terraform
+* Infrastructure as Code (IaaC) with Terraform
 
 Terraform is often referred to as “Infrastructure as Code (IaC)” or more precisely **API as Code**, because it interacts directly with cloud provider APIs to provision and manage infrastructure.
 
